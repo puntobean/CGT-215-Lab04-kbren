@@ -26,6 +26,7 @@ void factorialClass() {
 		cout << "This number will lead to an error. Please enter a new number." << endl;
 	else {
 		for (int i = 1; i <= n; ++i) {
+			//loop until i is greater than n, multiplying each time
 			factorial *= n;
 		}
 		cout << "Factorial of " << n << " = " << factorial << endl;
@@ -35,8 +36,25 @@ void factorialClass() {
 
 void arithmeticClass() {
 
-	cout << "This shows that this class ran" << endl;
+	int a, b, n;
 
+	cout << "Enter a number to start at" << endl;
+	cin >> a;
+	cout << "Enter a number to add each time" << endl;
+	cin >> b;
+	cout << "Enter the number of elements in the series" << endl;
+	cin >> n;
+
+	int sum = 0;
+
+	for (int i = 0; i < n; i++) {
+		//loop until i is equal to n
+		int elem = a + i * b;
+		cout << elem;
+		sum += elem;
+		cout << " + " ;
+	}
+	cout << "Sum of series: " << sum << endl;
 }
 
 void geometric() {
