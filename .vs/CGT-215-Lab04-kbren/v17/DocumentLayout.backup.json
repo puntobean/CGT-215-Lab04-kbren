@@ -14,17 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "CGT-215-Lab04-kbren.cpp",
               "DocumentMoniker": "C:\\Users\\katja\\source\\repos\\CGT-215-Lab04-kbren\\CGT-215-Lab04-kbren\\CGT-215-Lab04-kbren.cpp",
               "RelativeDocumentMoniker": "CGT-215-Lab04-kbren\\CGT-215-Lab04-kbren.cpp",
-              "ToolTip": "C:\\Users\\katja\\source\\repos\\CGT-215-Lab04-kbren\\CGT-215-Lab04-kbren\\CGT-215-Lab04-kbren.cpp",
-              "RelativeToolTip": "CGT-215-Lab04-kbren\\CGT-215-Lab04-kbren.cpp",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADgAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\katja\\source\\repos\\CGT-215-Lab04-kbren\\CGT-215-Lab04-kbren\\CGT-215-Lab04-kbren.cpp*",
+              "RelativeToolTip": "CGT-215-Lab04-kbren\\CGT-215-Lab04-kbren.cpp*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-09-15T05:41:04.412Z",
               "EditorCaption": ""

@@ -16,28 +16,32 @@ void printMenu() {
 void factorialClass() {
 
 	int n;
-	float factorial = 1.0;
 
+	//enter starting number
 	cout << "Please enter a number greater than 1." << endl;
 	cin >> n;
+
+	int total = 1;
 
 	//check to make sure number isn't 1
 	if (n <= 1)
 		cout << "This number will lead to an error. Please enter a new number." << endl;
+	//keep multiplying numbers until i = the factorial number
 	else {
 		for (int i = 1; i <= n; ++i) {
-			//loop until i is greater than n, multiplying each time
-			factorial *= n;
+			total *= i;
+			cout << i << " * ";
 		}
-		cout << "Factorial of " << n << " = " << factorial << endl;
-	}
-		
+		cout << " = ";
+		cout << "Factorial of " << n << " = " << total << endl;
+	}	
 }
 
 void arithmeticClass() {
 
 	int a, b, n;
 
+	//enter numbers for calculation
 	cout << "Enter a number to start at" << endl;
 	cin >> a;
 	cout << "Enter a number to add each time" << endl;
@@ -45,21 +49,49 @@ void arithmeticClass() {
 	cout << "Enter the number of elements in the series" << endl;
 	cin >> n;
 
-	int sum = 0;
+	int sum = a;
 
-	for (int i = 0; i < n; i++) {
+	//print starting number
+	cout << a;
+
+	for (int i = 0; i < n - 1; i++) {
 		//loop until i is equal to n
 		int elem = a + i * b;
-		cout << elem;
+		cout << " + " << elem;
 		sum += elem;
-		cout << " + " ;
 	}
+	//print sum
+	cout << " = " << sum << endl;
 	cout << "Sum of series: " << sum << endl;
 }
 
 void geometric() {
 
-	cout << "This shows that this class ran" << endl;
+	int r, a, n;
+
+	//enter numbers for calculation
+	cout << "Enter a number to start at" << endl;
+	cin >> a;
+	cout << "Enter a number to multiply by each time" << endl;
+	cin >> r;
+	cout << "Enter the number of elements in the series" << endl;
+	cin >> n;
+
+	int total = a;
+	int elem = a;
+
+	//print starting number
+	cout << a;
+
+	//loop for the number of elements in the series -1, since we already printed the starting number
+	for (int i = 0; i < n - 1; i++) {
+		elem = elem * r;
+		cout << " + " << elem;
+		total += elem;
+	}
+	//print total
+	cout << " = " << total << endl;
+	cout << "Total of series: " << total << endl;
 
 }
 
@@ -71,7 +103,7 @@ int main() {
 		printMenu();
 		cin >> choice;
 
-		//quit is user chooses an invalid choice or to quit
+		//quit if user chooses an invalid choice or to quit
 		if (choice > 3 || choice < 1) {
 			return 0;
 		}
@@ -88,7 +120,7 @@ int main() {
 			geometric();
 		}
 
-		cout << "Go Again? [Y/N] ";
+		cout << "Go Again? [Y/N] " << endl;
 		cin >> again;
 	} while (again == 'y' || again == 'Y');
 }
